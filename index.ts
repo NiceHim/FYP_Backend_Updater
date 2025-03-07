@@ -1,8 +1,8 @@
 import dotenv from "dotenv";
 import path from "path";
 import { createClient } from "redis";
-import { updateTransactionAndUser } from "./src/crons/updateTranscationAndUser";
-import { autoTrade } from "./src/crons/autoTrade";
+import { updateTransactionAndUser } from "./src/tasks/updateTranscationAndUser";
+import { autoTrade } from "./src/tasks/autoTrade";
 import type IQuote from "./src/models/quote";
 import type ITradeAction from "./src/models/tradeAction";
 import DBManager from "./src/db/DBManager";
