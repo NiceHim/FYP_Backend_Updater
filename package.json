@@ -1,0 +1,28 @@
+{
+  "name": "fyp_backend_cronjob",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=dev nodemon --files index.ts",
+    "build:dev": "npx tsc && cp .env.dev dist/",
+    "build:prod": "npx tsc && cp .env.production dist/",
+    "start": "NODE_EVN=production node ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@polygon.io/client-js": "^7.3.2",
+    "axios": "^1.7.7",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.9.0",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
