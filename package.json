@@ -8,7 +8,7 @@
     "dev": "cross-env NODE_ENV=dev nodemon --files index.ts",
     "build:dev": "npx tsc && cp .env.dev dist/",
     "build:prod": "npx tsc && cp .env.production dist/",
-    "start": "NODE_EVN=production node ./dist/index.js"
+    "start": "NODE_ENV=production node ./dist/index.js"
   },
   "author": "",
   "license": "ISC",
