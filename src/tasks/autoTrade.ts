@@ -1,6 +1,5 @@
 import { StrictFilter, StrictUpdateFilter, Document, UpdateFilter, AnyBulkWriteOperation, TransactionOptions, OptionalId, ClientSession } from "mongodb";
 import DBManager from "../db/DBManager";
-import { getTradeSignal } from "../api/tradeSignal";
 import ITransaction from "../models/transaction";
 import IUser from "../models/user";
 
